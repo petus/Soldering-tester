@@ -46,6 +46,9 @@ void loop() {
   
   if(!(digitalRead(UB)))
   {
+    digitalWrite(SL, LOW);
+    delay(100);
+    digitalWrite(SL, HIGH);
     Serial.println("Start of testing");
 
     for(uint8_t i=0; i <= 7; i++)
