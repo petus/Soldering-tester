@@ -93,7 +93,7 @@ void loop() {
           break;
       }
 
-      if((anaVal >= 300) && (anaVal <= 800))
+      if((anaVal >= 200) && (anaVal <= 800))
       {
         Serial.print("OK: channel ");
         Serial.print(i);
