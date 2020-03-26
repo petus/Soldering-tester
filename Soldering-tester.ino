@@ -4,13 +4,14 @@
  * made by chiptron.cz
  * 3/2020
  * 
- * Probe GND of Nucelo board to Vcc of tested board
+ * Probe GND of Nucleo board to Vcc of tested board
  * Probe inputs (A0, A1,...) to pin (e.g. GPIO) of tested board
  * 
  * Push the user button for the soldering test
  * If the LED is blinking, some analog channel is badly soldered, otherwise it is ok
  * 
  */
+
 
 #define A0 PA0
 #define A1 PA1
@@ -26,8 +27,6 @@
 
 #define ADCformula (1000 * (3.3 / 1023.0))
 
-uint8_t analogArray[] = {0, 1, 2, 3, 4, 5, 6, 7};
-
 float anaVal = 0;
 
 void setup() {
@@ -36,6 +35,15 @@ void setup() {
 
   pinMode(UB, INPUT); // user button
   pinMode(SL, OUTPUT);  //status LED
+
+  pinMode(A0, INPUT);
+  pinMode(A1, INPUT);
+  pinMode(A2, INPUT);
+  pinMode(A3, INPUT);
+  pinMode(A4, INPUT);
+  pinMode(A5, INPUT);
+  pinMode(A6, INPUT);
+  pinMode(A7, INPUT);
   
   digitalWrite(SL, LOW);
 }
