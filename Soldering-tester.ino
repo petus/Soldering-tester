@@ -4,7 +4,6 @@
  * made by chiptron.cz
  * 3/2020
  * 
- * Probe Vcc of Nucleo board with 100k resistor to GND of tested board
  * Probe GND of Nucelo board to Vcc of tested board
  * Probe inputs (A0, A1,...) to pin (e.g. GPIO) of tested board
  * 
