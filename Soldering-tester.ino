@@ -4,6 +4,7 @@
  * made by chiptron.cz
  * 3/2020
  * 
+ * Put the external resistors (3k3 - 10k) between Vcc Nucleo board and Analog Inputs of Nucleo board
  * Probe GND of Nucleo board to Vcc of tested board
  * Probe inputs (A0, A1,...) to pin (e.g. GPIO) of tested board
  * 
