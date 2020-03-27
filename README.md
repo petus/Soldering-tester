@@ -5,7 +5,9 @@ The principle of the soldering test is the measuring of structural diodes inside
 
 Description:
 
-Wire the VCC of Nucleo64 board through 100k resistor to Ground of tested board.
+Wire the GND of Nucleo64 board to Vcc of tested board.
+
+Enable or connect pull-up resistor for each analog input (3k3 - 10k).
 
 Wire the A0, A1,... pin of Nucleo64 to PIN (GPIO etc.) of tested board.
 
